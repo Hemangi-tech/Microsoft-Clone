@@ -1,621 +1,374 @@
 * {
-    margin: 4px;
-    font-family:arial;
-    border: border-box;
-    font-family: segoe UI ; 
-    font-size: small;
-    font-weight:450;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-
-
-.navbar {
-    height: 60px;
-    width: 10000px;
-    background-color:rgb(252, 251, 249);
-    color: #000000;
-    display:flex;
-    align-items: center;
-
+html {
+  scroll-behavior: smooth;
 }
 
-.nav-logo{
-
-    height: 25px;
-    width: 130px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-left: 6px;
-    padding-bottom: 16px;
-    margin-left: 3px;
-    
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: segoe UI;
 }
 
-
-.logo {
-        background-size: cover;
-        background-image: url("microsoft_logo.png");
-        height: 25px;
-        width: 120px;
+body a {
+  text-decoration: none;
+  color: black;
 }
 
-.border {
- 
-    border: 2px dotted transparent;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 2rem #aaa;
+  padding: 5px;
+  height: 3.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  z-index: 99;
 }
 
-.border:hover {
-    border: 2px dotted black;
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 55%;
 }
 
-
-
-.list{
-    height: 50px;
-    width: 500px;
-    display:flex;
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.9rem;
 }
 
-.text{
-    
-    padding-top: 4px;
-    
-    font-size: 0.7rem;
-    margin-bottom: 1px;
-    
+.nav-logo img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 100%;
 }
 
-.select{
-    border-color: transparent;
-    background-color: rgb(252, 251, 249);
-    border-width: 8px;
-    align-items: center;
-    padding-left: 180px;
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
 }
 
-.icon{
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 0%;
-    height: 35px;
-    width: 45px;
+.nav-items a {
+  margin-right: 0.6rem;
 }
 
-.nav-pic{
-
-    /*height: 25px;
-    width: 130px;
-    */
-    
+/* .nav-items a::after {
+    content: ' ';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      border-radius: 5px;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .5s;
 }
 
+.nav-items a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .5s;
+} */
 
-.contact {
-        background-size: cover;
-        background-image: url("contact.png");
-        height: 58px;
-        width: 58px;
+.signin-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.search{
-    
-    display:flex;
+.nav-icon {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: auto;
+  width: 100px;
 }
 
-.s1{
-    padding-top: 10px;
+main {
+  width: 100%;
+  height: auto;
 }
-
 
 /* hero section*/
-
-.hero-section{
-    background-image: url("hero.png");
-    height: 500px;
-    width: 1600px;
-    background-size: cover;
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
- 
-.box{
-    padding-top: 40px;
-    padding-left: 50px;
-    position: relative;
+.hero-section {
+  background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP4-1399x600");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
+  margin-bottom: 1.8rem;
 }
 
-.box-contents{
-    position: absolute; 
-    bottom: 0; 
-    color: black; 
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    margin:0;
-    padding-left: 70px;
-    padding-bottom: 100px;
-    text-align: left;
-  }
+.box {
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  box-sizing: border-box;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+  padding: 3rem;
+  margin-left: 4rem;
+  color: #1a1919;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .button1{
-    height: 28px;
-    width: 56px;
-    font-weight: 500;
-    font-size: 16px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border:0;
-  }
+.btn {
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
 
-  .button2{
-    height: 40px;
-    width: 110px;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    font-size: 16px;
-  }
+.btn-yellow {
+  background-color: #ffb900;
+  width: 50px;
+  height: auto;
+}
 
-  .box-text{
-    font-size: 30px;
-    font-weight: 500;
-    color:black;
-    padding-bottom: 10px;
-  }
+.btn-yellow:hover {
+  background-color: #dfa916;
+}
 
-  .smallpara{
-    font-size: 16px;
-    color:black;
-    padding-bottom: 10px;
+.btn-primary {
+  background-color: #0067b8;
+  width: 100px;
+  color: #fff;
+  height: auto;
+}
 
-  }
+.btn-primary:hover {
+  background-color: #0f7acc;
+}
 
-  .hero-icon{
-    padding-left: 700px;
-    display: flex;
-    align-items: center;
-  }
+.box h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+}
 
-.links{
+.box p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-    display: flex;
-   justify-content: center;
-   height: 100px;
-   width: 940px;
-  margin-left: 16px;
+.hero-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.hero-icon i {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+
+section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+.links-logo {
+  display: grid;
+  align-items: center;
+  height: auto;
+  width: 15%;
+  text-align: center;
   margin-right: 16px;
-  padding-left: 250px;
+  cursor: pointer;
 }
 
-.mlogo{
-    align-items: center;
-    
-    height: 72px ;
-    width: 215px ;
-   text-align: center;
-   margin-right: 16px;
-   
+.link-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0067b8;
+  text-decoration: underline;
 }
 
-.xbox{
-   align-items: center;
-   padding-left: 00px;
-   height: 72px;
-   width: 90px;
-   text-align: center;
-   margin-right: 16px;
-}
 
-.mlogo2{
-
-   padding-left: 00px;
-   height: 75px;
-   width: 125px;
-   text-align: center;
-   margin-right: 16px;
-}
-
-.sdevice{
-    height: 70px;
-    width: 180px;
-   text-align: center;
-   margin-right: 16px;
-   /* margin-right: 100px; */
-}
-
-.link-text{
-
-    font-size: 16px;
-    font-weight: 500;
-    
-}
 
 /* SHOP SECTION  */
-
-.shop-section{
-    display: flex;
-    /* height: 1500px; */
-    /* width: 1200px; */
-    background-color: ;
-   padding-left: 50px;
-   padding-right: 50px;
+.shop-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.sbox{
-     
-    /* border: 0.1px groove black; */
-    height: 550px;
-    width: 25%;
-    justify-content: space-evenly;
-    margin: 20px; 
+.shop-item-box {
+  background-color: #ffffff;
+  box-shadow: 0 0.2rem 0 #d4d4d4;
+    width: 29%;
+    height: 500px;
+    padding: 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
 }
 
-.box1{
-    background-image: url(shop1.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.shop-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
 }
 
-.box2{
-    background-image: url(shop2.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.shop-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.box3{
-    background-image: url(shop3.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.shop-info p {
+    font-size: 1rem;
+    line-height: 1.8rem;
 }
 
-.box4{
-    background-image: url(shop4.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.shop-info button {
+    background-color: #0067b8;
+    padding: 0.7rem;
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
-.sheader{
-    height: 50px;
-    width: 260px;
+.shop-info button:hover {
+    background-color: #0f7acc;
 }
 
-.sbody{
-    height: 195px;
-    width: 265px;
-    padding-left: 24px;
-    padding-top: 200px;
+.shop-info a {
+    color: #0067b8;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
-
-.s1head{
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.p1text{
-    font-size: 16px;
-    padding-top: 25px;
-    padding-left:10px ;
-}
-.heading{
-    height: 70px;
-    width: 220px;
-    margin: 0px;
-}
-
-.sp{
-    height: 95px;
-    width: 220px;
-}
-
-
-.s2head{
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.p2text{
-    font-size: 16px;
-    padding-top: 5px;
-    padding-left:10px ;
-}
-
-.s3head{
-    padding-top: 15px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.p3text{
-    font-size: 16px;
-    padding-top: 10px;
-    padding-left:10px ;
-}
-
-.s4head{
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.p4text{
-    font-size: 16px;
-    padding-top: 5px;
-    padding-left:10px ;
-}
-
-
-.s1b{ 
-    height: 45px;
-    width: 130px;                          /* this css same fore s1 & s2*/
-    margin-top: 20px;
-    margin-left: 40px;
-    color: white;
-   background-color: #0067B8;
-     
-    font-size: 16px;
-}
-
-.s3b{
-
-    height: 45px;
-    width: 160px;                          /* this css same fore s1 & s2*/
-    margin-top: 20px;
-    margin-left: 40px;
-    color: white;
-   background-color: #0067B8;
-     
-    font-size: 16px;
-
-}
-
-.s4b{
-    height: 45px;
-    width: 135px;                          /* this css same fore s1 & s2*/
-    margin-top: 20px;
-    margin-left: 40px;
-    color: white;
-   background-color: #0067B8;
-     
-    font-size: 16px;
-
-}
-
-.shopping{
-    background-image: url("shop_image");
+.copilot-promo-img {
+    background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP5-1596x600');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 420px;
-    width: 1500px;
-    margin-right: 20px;
-    padding-top: 120px;
-    padding-left: 50px;
-    
-
+    width: 100%;
+    min-height: 100vh;
 }
 
-.green{
-    background-color: #9BF00b;
-    width: 168px;
-    height: 28px;
-    font-size: 16px;
-    padding-left: 10px;
-    font-weight: 600;
-    
+.heading {
+  margin-left: 4rem;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 500;
 }
 
-.shopping-text{
-    width: 770px;
-    height: 165px;
+.follow {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
 }
 
-.shopping-h{
-width: 774px;
-height: 28px;
-padding-top: 10px;
+.follow-ms {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
-.h{
-    color: #fffefe;
-    font-size: 28px;
+.social-icons {
+  display: flex;
+  margin-left: 1rem;
 }
 
-.shopping-para{
-    height: 24px;
-    width: 775px;
-    padding-top: 20px;
+.social-icons i {
+  margin-left: 1.5rem;
+  font-weight: 400;
 }
 
-.shopping-sp{
-    color: aliceblue;
-    font-size: 18px;
+.back-to-top {
+  position: relative;
+  right: 2rem;
+  background-color: #ccc;
+  padding: 1rem;
 }
 
-.link-group{
-    height: 55px;
-    width: 775px;
-    display: flex;
-    padding-top: 20px;
+.back-link {
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-.link-button{
-    height: 40px;
-    width: 160px;
-    font-size: 16px;
+.back-top:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.link-a{
-    padding-top: 10px;
+.foot-pannel {
+  margin: 0;
+  padding: 0;
+  background-color: #dddddddd;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.alink{
-   
-    font-size: 16px;
-    color:white;
-    text-decoration: none;
-}
-
-.alink:hover{
-    text-decoration: underline;
-}
-
-.bottom-text{
-    padding-top: 70px;
-    font-weight: 600;
-    font-size: 36px;
-    width: 890px;
-    height: 28px;
-    margin: 12px;
-}
-
-.shop-section2{
-    display: flex;
-    /* height: 1500px; */
-    /* width: 1200px; */
-    background-color: ;
-   padding-left: 50px;
-   padding-right: 50px;
-}
-
-
-.s2b4{
-        height: 45px;
-        width: 240px;                          /* this css same fore s1 & s2*/
-        margin-top: 30px;
-        margin-left: 30px;
-        color: white;
-       background-color: #0067B8;
-         
-        font-size: 16px;
-}
-
-.box1-1{
-    background-image: url(s22.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.box1-2{
-    background-image: url(s23.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.box1-3{
-    background-image: url(s24.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.box1-4{
-    background-image: url(s25.png);
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.follow{
-    
-    display: flex;
-    /* width: 2780px;
-    height: 1250px; */
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-bottom: 40px;
-
-}
-.contact-acc{
-    padding-top: 40px;
-    font-size: 16px;
-    font-weight: 400;
-
-}
-
-.shop-icon{
-    padding-top: 40px;  
-    display: flex;
-}
-
-.fb{
-    padding-left: 5px;
-}
-
-.yt{
-    padding-left: 5px;
-}
-
-.xt{
-    padding-left: 5px;
-}
-
-.back-top{
-    margin-left: 1320px;
-    margin-bottom: 20px;
-    height: 50px;
-    width: 142px;
-    background-color: lightgray;
-    border: none;
-}
-
-.back-link{
-    font-weight: 600;
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.back-top:hover{
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-.foot-pannel{
-    margin: 0;
-    padding: 0;
-    background-color: #dddddddd;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-
-
-ul{
-    margin-top: 20px;
+ul {
+  margin-top: 20px;
 }
 
 ul a {
-    display: block;
-    font-size: 0.85rem;
-    margin-top: 10px;
-    color: #616161;
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #616161;
 }
 
-.fpara{
-    color: #616161;
-    font-size: 15px;
-    font-weight: 500;
+.fpara {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-
-.foot-pannel2{
-    margin: 0;
-    background-color: #dddddddd;
-    color: #616161;
-    display: flex;
-    padding-left: 40px;
-    font-size: 0.5rem;
-    height: 40px;
-    /* justify-content: space-evenly; */
-
+.foot-pannel2 {
+  margin: 0;
+  background-color: #dddddddd;
+  color: #616161;
+  display: flex;
+  padding-left: 40px;
+  font-size: 0.5rem;
+  height: 40px;
+  /* justify-content: space-evenly; */
 }
 
 .pages {
-    padding-left: 450px;
-    
+  padding-left: 450px;
 }
 
-.aa{
-    font-size: 11px;
-    justify-content: space-evenly;
+.aa {
+  font-size: 11px;
+  justify-content: space-evenly;
 }
